@@ -1,13 +1,14 @@
 /**
- * 
- */
-/**
  * @author chenwei
  *
  */
 package com.boldwei.service.impl;
 
 import java.util.List;
+
+
+
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,7 +27,6 @@ public class PersonServiceImpl implements IPersonService {
 	public void setPersonMapper(PersonMapper personMapper) { 
 		this.personMapper = personMapper;
 	}
-	@Override
 	public List<Person> loadPersons() { 
 		return personMapper.queryAll();
 	}
